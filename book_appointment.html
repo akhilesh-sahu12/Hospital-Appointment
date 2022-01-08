@@ -4,65 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Appointment</title>
     <link rel="stylesheet" href="mystyles.css">
+    <title>Book Appointment</title>
 </head>
 <body>
-    <div class="center3">
-        <h2 style="text-align: center;color: rgb(39, 42, 216);">HORIZON Multispecialy Hospital</h2>
-        <img src="./images/icon.jpg" width="85" class="center1" >
-        <h2 style="color:rgb(187, 42, 42); align-items: center";>Book Your Appointment</h2>
-        </div>
-          
+        <nav>
+            <ul style="list-style-type:none;">
+              <li>
+                <h1>
+                  <a href="index.html">
+                    <span class="fas fa-hospital-user" aria-hidden="true"></span>
+                    <span>Healthcare Support</span>
+                  </a>
+                </h1>
+              </li>
+            </ul>
+        </nav>
+        <h2 style="color:rgb(187, 42, 42); text-align: center;">Book Your Appointment:</h2>
+        <div style="overflow-x:auto;">
         <form>
+            <fieldset>
+              <legend>Patient Details:</legend>
+              <table style="text-align: center; width: 50%;" class="center-t">
             
-            <div class="forms">
-            <div class="form-group row">
-                <label class="col-sm-4 col-lg-4">
+                       <tr><td>
+                        <div class="forms">
+                <label >
                     Patient Name:
-                </label>
-                    <input type="text"id="patient-name"class="form-control"
+                </label></td>
+              <td>
+                    <input type="text"
                     placeholder="Name"required>
-            </div><br>
+              </td>
+              </tr>
+            </div>
             <!---->
-            <div class="form-group row">
-              <label class="col-sm-4 col-lg-4">
+            <tr><td>
+                <div class="age"></div>
+              <label 
+                    >
                   Age:
-              </label>
-                  <input type="number"id="age"class="form-control"
-                  placeholder="Age in Year"required>
-          </div><br>
+              </label></td>
+              <td>
+                  <input type="number"
+                         placeholder="Age in Year"required></dt></tr>
+          </div>
           <!---->
           <!---->
-          <div class="form-group row">
-            <label class="col-sm-4 col-lg-4">
-                Adress:
-            </label>
-                <input type="text"id="address"class="form-control"
-                placeholder="House no. village or city pincode"required>
-        </div><br>
+         <tr><td>
+            <div class="addresses">
+            <label >
+                Address:
+            </label></td>
+            <td>
+                <input type="text"
+                placeholder="House no. village or city pincode"required></dt></tr>
+        </div>
         <!---->
         <!---->
-        <div class="form-group row">
-            <label class="col-sm-4 col-lg-4">
+        
+          <tr><td>
+            <div class="emails">
+            <label>
                 Email:
-            </label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="abcd@gmail.com"required>
+            </label></td><td>
+            <input type="email" name="email" placeholder="abcd@gmail.com"required></td></tr>
            <!--     <input type="email"id="email"class="form-control"
                 placeholder="abcd@gmail.com"required>-->
-        </div><br>
+        </div>
         <!---->
         <!---->
-        <div class="form-group row">
-            <label class="col-sm-4 col-lg-4">
+        
+          <tr><td>
+              <div class="mobile-number">
+            <label>
                 Mobile number:
-            </label>
-                <input type="tel"id="contact"class="form-control"
-                placeholder="9999999999"required>
-        </div><br>
+            </label></td>
+            <td>
+                <input type="tel"
+                placeholder="9999999999"required></td></tr>
+        </div>
+              
+                  <tr><td>
+                    <div class="genders">
+                <label>Gender:</label></td><td>
+                <input type="radio" name="gender">
+                Male<input type="radio" name="gender">
+                Female<input type="radio" name="gender">
+                Custom<input type="radio" name="gender"></td></tr>
+              </div>
         <!---->
-        <div class="form-group row"> 
-            <label for="Department">Department:</label>
+        
+            <tr><td>
+                <div class="departments"> 
+            <label for="Department">Department:</label></td><td>
             <select id="department" name="department">
               <option value="1">Cardiology</option>
               <option value="2">Electrophysiology</option>
@@ -70,42 +105,72 @@
               <option value="4">Neurology</option>
               <option value="5">Oncology</option>
               <option value="6">Urology</option>
-            </select></div><br>
+            </select>
+        </td></tr></div>
        
-            <div class="form-group row"> <label for="doctors_list">Select Docter:</label>
+            
+                <tr><td>
+                    <div class="docters"> <label for="doctors_list">Select Docter:</label>
+                    </td><td>
                 <select id="doctors_list" name="doctors_list">
                   <option value="a">Dr. kapil kumawat</option>
                   <option value="b">Dr. abir banerjee</option>
                   <option value="c">Dr. Abhishek Basu</option>
                   <option value="d">Dr. Abhay Kumar</option>
-                </select></div><br>
-          <div class="form-group row">
-              <label for="col-sm-4 col-lg-4">Date of Booking: </label>
+                </select>
+            </td></tr></div>
+
+
+          
+              <tr><td>
+                <div class="dates">
+              <label>Date of Booking: </label>
+              </td><td>
                   <input type="date"id="date"class="form-control">
-          </div><br>
+                </td></tr>
+          </div>
           <!---->
-          <div class="form-group row">
-              <label class="col-sm-4 col-lg-4">
+          
+              <tr><td>
+                <div class="form-group row">
+              <label>
                  Time:
               </label>
+              </td><td>
                   <input type="time"id="time"class="form-control">
-          </div><br>
+                </td></tr>
+          </div>
           <!---->
-          <div class="form-group row">
-              <label class="col-sm-4 col-lg-4">
+          
+              <tr><td>
+                <div class="form-group row">
+              <label>
                  Symptoms:
               </label>
-                  <textarea id="symptoms" class="form-control" required></textarea>
-          </div><br>
+              </td><td>
+                  <textarea 
+                       rows="5" cols="40" required></textarea>
+                    </td></tr>
+          </div>
           <!---->
-          <div class="form-group row justify-content-end">
-              <div class="col-sm-5">
+          <tr><td>
+          <div class="submit-button">
                   <button type="submit"class="btn btn-form">
                       SUBMIT
                   </button>
+                </td>
+                <td>
+          <div class="reset-button">
+                  <button type="reset" class="btn btn-form">
+                      RESET
+                  </button>
+                </td>
+                </tr>
               </div>
           </div>
         </div>
+          </fieldset>
         </form>
+    </div>
 </body>
 </html>

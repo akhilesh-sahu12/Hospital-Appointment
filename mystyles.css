@@ -1,72 +1,127 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-.headers{
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    text-rendering: auto;
-    display: flex;
-    align-items: center;
-   justify-content: center
-}
-.center3{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    align-items: center;
-    
-}
-.center1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-h2{
-    text-align: center;
-}
-.form-group{
-    text-align: center;
-}
-#home-page{
-    align-items: center;
-}
-p1{
-    color: rgb(77, 66, 66);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
 }
 
-  .message {
-    text-align: center;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+.docter-list1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table .navbar1 {
+  text-align: left;
+  align-items:baseline;
+  box-sizing: border-box;
+
+}
+p1 {
+  color: rgb(77, 66, 66);
+}
+
+.message {
+  text-align: center;
+}
+.top-right {
+  bottom: 8px;
+  right: 16px;
+  font-size: 150%;
+}
+.vertical-menu {
+  font-size: 100%;
+}
+.aboutus {
+  text-align: center;
+}
+a:link,
+a:visited {
+  background-color: none;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(28, 155, 123);
+}
+.about-us {
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: transparent;
+}
+.navbar {
+  padding: 0;
+}
+/*form-----*/
+.center-t {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*feedback-----*/
+.feedback {
+  text-align: center;
+}
+.about-us {
+  background: url(https://www.healthcaresupport.com/wp-content/themes/healthcare/images/notepad.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 20px;
+  width: 90%;
+  text-align: center;
+  background-position: center;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+}
+.about-us p {
+  padding: 0rem 0rem 0rem 1rem;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .about-us p {
+    padding-left: 1rem;
   }
-  .top-right {
-    bottom: 8px;
-    right: 16px;
-    font-size: 150%;
+}
+@media only screen and (min-width: 600px) {
+  .about-us p {
+    padding: 0rem 2rem 0rem 5rem;
   }
-  .vertical-menu{
-      font-size: 150%;
+}
+@media only screen and (min-width: 768px) {
+  .about-us p {
+    padding: 0rem 5rem 0rem 10rem;
   }
-  .aboutus{
-      text-align: center;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .about-us p {
+    padding: 0rem 10rem 0rem 15rem;
   }
-  a:link, a:visited {
-    background-color: #7e7385;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1076px) {
+  .about-us p {
+    padding: 0rem 20rem 0rem 25rem;
   }
-  
-  a:hover, a:active {
-    background-color: rgb(28, 155, 123);
-  }
+}
